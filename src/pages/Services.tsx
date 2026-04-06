@@ -13,7 +13,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="services-container fade-in">
+    <div className="services-container fade-in pt-[90px] pb-32">
       <header className="services-header">
         <div className="badge">
           Phaenicio Ecosystem
@@ -45,14 +45,7 @@ const Services = () => {
         ))}
       </div>
 
-      <footer className="about-footer">
-        <div className="about-footer-text">
-          PHAENICIO-ECOSYSTEM-V1
-        </div>
-        <div className="about-footer-text">
-          - 2026 -
-        </div>
-      </footer>
+      {/* Global footer will be rendered by App.tsx */}
     </div>
   );
 };

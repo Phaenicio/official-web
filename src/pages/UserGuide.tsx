@@ -10,7 +10,7 @@ const UserGuide = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto mt-32 px-[5%] grid grid-cols-1 md:grid-cols-[250px_1fr] gap-16 pt-[90px] pb-32 fade-in">
+    <div className="max-w-7xl mx-auto px-[5%] grid grid-cols-1 md:grid-cols-[250px_1fr] gap-16 pt-[90px] pb-32 fade-in">
       <aside className="sticky top-32 h-fit hidden md:block text-left">
         <h3 className="text-xs font-bold uppercase tracking-widest text-text-h/40 mb-6">On This Page</h3>
         <nav className="flex flex-col gap-1">
@@ -106,11 +106,8 @@ const UserGuide = () => {
           </div>
         </section>
 
-        <footer className="mt-32 pt-16 border-t border-border text-text/40 text-sm flex justify-between uppercase font-bold tracking-widest italic">
-          <p>Last modified: April 2026</p>
-          <p>© 2026 Phaenicio Organization.</p>
-        </footer>
-      </main>
+          {/* Global footer will be rendered by App.tsx */}
+        </main>
     </div>
   );
 };

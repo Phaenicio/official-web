@@ -69,7 +69,7 @@ const Contact = () => {
               <h2 className="text-3xl font-bold mb-2">Send a Message</h2>
               <p className="text-text">For partnership proposals, media requests, or support.</p>
             </div>
-            
+
             <form
               className="flex flex-col gap-8"
               onSubmit={(e) => e.preventDefault()}

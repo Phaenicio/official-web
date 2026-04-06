@@ -8,6 +8,7 @@ import Services from './pages/Services';
 
 
 import UserGuide from './pages/UserGuide';
+import { Features, Solutions, Pricing, Security, Blog, Community } from './pages/OtherPages';
 import ParticleBackground from './components/ParticleBackground';
 
 function App() {
@@ -22,6 +23,12 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/user-guide" element={<UserGuide />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/solutions" element={<Solutions />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/community" element={<Community />} />
         </Routes>
       </main>
       <Footer />
