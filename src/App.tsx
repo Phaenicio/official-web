@@ -3,7 +3,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import { Services, Contact } from './pages/OtherPages';
+import Contact from './pages/Contact';
+import { Services } from './pages/OtherPages';
+
 import UserGuide from './pages/UserGuide';
 import ParticleBackground from './components/ParticleBackground';
 
