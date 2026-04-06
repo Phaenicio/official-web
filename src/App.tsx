@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import { About, Services, Contact } from './pages/OtherPages';
+import About from './pages/About';
+import { Services, Contact } from './pages/OtherPages';
 
 function App() {
   return (
@@ -20,5 +21,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
