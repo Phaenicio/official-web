@@ -1,0 +1,62 @@
+import { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import { FiMenu, FiX } from 'react-icons/fi';
+import logoLong from '../assets/phaenicio-long.svg';
+import logoShort from '../assets/phaenicio.svg';
+import '../styles/navbar.css';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
+  return (
+    <nav className="navbar fade-in">
+      <Link to="/" className="nav-logo" onClick={closeMenu}>
+        <picture>
+          <source media="(max-width: 768px)" srcSet={logoShort} />
+          <img src={logoLong} alt="Phaenicio" />
+        </picture>
+      </Link>
+
+      <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+        <NavLink 
+          to="/" 
+          className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
+          onClick={closeMenu}
+          end
+        >
+          Home
+        </NavLink>
+        <NavLink 
+          to="/about" 
+          className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
+          onClick={closeMenu}
+        >
+          About
+        </NavLink>
+        <NavLink 
+          to="/services" 
+          className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
+          onClick={closeMenu}
+        >
+          Services
+        </NavLink>
+        <NavLink 
+          to="/contact" 
+          className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
+          onClick={closeMenu}
+        >
+          Contact
+        </NavLink>
+      </div>
+
+      <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle Menu">
+        {isOpen ? <FiX /> : <FiMenu />}
+      </button>
+    </nav>
+  );
+};
+
+export default Navbar;
