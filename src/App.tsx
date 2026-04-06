@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import { Services, Contact } from './pages/OtherPages';
+import UserGuide from './pages/UserGuide';
 import ParticleBackground from './components/ParticleBackground';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/user-guide" element={<UserGuide />} />
         </Routes>
       </main>
       <Footer />

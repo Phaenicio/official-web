@@ -22,14 +22,6 @@ const Navbar = () => {
 
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>
         <NavLink 
-          to="/" 
-          className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
-          onClick={closeMenu}
-          end
-        >
-          Home
-        </NavLink>
-        <NavLink 
           to="/about" 
           className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
           onClick={closeMenu}
@@ -50,6 +42,22 @@ const Navbar = () => {
         >
           Contact
         </NavLink>
+        <NavLink 
+          to="/user-guide" 
+          className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
+          onClick={closeMenu}
+        >
+          User Guide
+        </NavLink>
+        <a 
+          href="https://github.com/phaenicio" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="nav-item"
+          onClick={closeMenu}
+        >
+          GitHub
+        </a>
 
         <a href="#" className="btn-try-zosterix" onClick={closeMenu}>
           <span className="btn-label">Try Zosterix</span>
