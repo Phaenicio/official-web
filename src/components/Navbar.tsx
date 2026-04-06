@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 import logoLong from '../assets/phaenicio-long.svg';
 import logoShort from '../assets/phaenicio.svg';
 import '../styles/navbar.css';
@@ -50,6 +50,14 @@ const Navbar = () => {
         >
           Contact
         </NavLink>
+
+        <a href="#" className="btn-try-zosterix" onClick={closeMenu}>
+          <span className="btn-label">Try Zosterix</span>
+          <span className="btn-divider"></span>
+          <span className="btn-icon">
+            <FiChevronDown />
+          </span>
+        </a>
       </div>
 
       <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle Menu">
@@ -60,3 +68,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
