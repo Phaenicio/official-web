@@ -1,0 +1,64 @@
+.comingsoon-container {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  background-color: var(--background);
+  background-image: 
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center center;
+}
+
+.comingsoon-content {
+  background: var(--background);
+  padding: 3rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.comingsoon-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--foreground);
+}
+
+.comingsoon-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+  color: var(--foreground);
+}
+
+.comingsoon-text {
+  color: var(--muted-foreground);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--primary-foreground);
+  background-color: var(--primary);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.back-link:hover {
+  opacity: 0.9;
+}
