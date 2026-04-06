@@ -1,45 +1,58 @@
-import '../styles/about.css';
+import { FiTarget, FiCpu, FiUsers } from 'react-icons/fi';
 
 const About = () => {
   return (
-    <div className="about-container fade-in">
-      <header className="about-header">
-        <div className="badge">
-          Empowering Researchers Globally
+    <div className="max-w-[1000px] mx-auto mt-32 px-[5%] fade-in pb-32">
+      <header className="mb-24 text-center pt-[90px]">
+        <div className="inline-block px-4 py-1.5 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-semibold mb-6">
+          Pioneering Research Infrastructure
         </div>
-        <h1 className="about-title">
-          Purpose-Built <br /> Digital Infrastructure
+        <h1 className="text-6xl font-extrabold leading-[1.1] mb-6 text-text-h max-md:text-4xl tracking-tight">
+          Phaenicio: Building <br /> <span className="text-primary">for the Next Frontier.</span>
         </h1>
-        <p className="about-tagline">
-          Unlocking human potential in specialized communities.
+        <p className="text-xl text-text max-w-[600px] mx-auto">
+          Empowering specialized communities through precision-driven technology.
         </p>
       </header>
 
-      <section className="about-content">
-        <p className="about-paragraph">
-          We believe that meaningful progress occurs at the intersections of specialized knowledge and purpose-built technology. Phaenicio operates as a multi-product ecosystem, designing digital infrastructure that addresses the unique requirements of professional and academic communities. Rather than pursuing generalized software solutions, we focus on creating niche platforms that empower experts to excel within their specific domains.
-        </p>
+      <section className="text-left">
+        <div className="mb-24 p-16 bg-white/5 border border-border rounded-[40px] text-center">
+          <h2 className="text-sm font-bold uppercase tracking-[0.2em] mb-8 text-primary">Our Mission</h2>
+          <p className="text-3xl text-text-h font-medium leading-relaxed tracking-tight">
+            At Phaenicio, we believe that meaningful progress occurs at the intersections of specialized knowledge and purpose-built technology. We design digital infrastructure that addresses the unique requirements of professional and academic communities.
+          </p>
+        </div>
 
-        <p className="about-paragraph">
-          Our approach is rooted in the conviction that many essential fields remain underserved by mainstream technological advancements. We dedicate our resources to building tools that bridge these gaps, ensuring that the right digital environment can unlock latent potential. By prioritizing depth over breadth, we provide the stability and precision required for navigating complex professional landscapes.
-        </p>
+        <div className="grid grid-cols-3 gap-8 mb-24 max-md:grid-cols-1">
+          {[
+            { icon: <FiTarget />, title: "Stability & Precision", text: "We provide the stability required for navigating complex professional landscapes, ensuring every tool we build is a seamless extension of human expertise." },
+            { icon: <FiCpu />, title: "Intelligent Design", text: "Our platforms leverage advanced AI orchestration to automate the heavy lifting, allowing experts to focus on what matters most: discovery." },
+            { icon: <FiUsers />, title: "Domain Depth", text: "Rather than pursuing generalized solutions, we focus on niche ecosystems that empower professionals within their specific fields." }
+          ].map((pillar, i) => (
+            <div key={i} className="glass p-10 rounded-[32px] hover:border-primary group">
+              <div className="text-4xl text-primary mb-6 group-hover:scale-110 transition-transform">{pillar.icon}</div>
+              <h3 className="text-2xl font-bold mb-4 text-text-h">{pillar.title}</h3>
+              <p className="text-text leading-relaxed">{pillar.text}</p>
+            </div>
+          ))}
+        </div>
 
-        <p className="about-paragraph">
-          Zosterix stands as our flagship initiative and a testament to our commitment to the global research community. As a dedicated space for researchers to document their findings, establish connections, and foster collaboration, it embodies our mission to enhance the visibility and impact of academic work. This platform serves as the foundation for an expanding ecosystem of tools designed to support those who push the boundaries of human understanding.
-        </p>
-
-        <p className="about-paragraph">
-          Through a growing portfolio of specialized platforms, we are cultivating a diverse digital infrastructure that respects the nuances of every field we enter. Our goal is to ensure that every professional community, regardless of its scale, has access to the sophisticated tools necessary to thrive in an increasingly complex digital age. We remain focused on the long-term impact of our products, building a future where technology serves as a seamless extension of human expertise.
-        </p>
+        <div className="max-w-[800px] mx-auto text-center border-t border-border pt-24">
+          <h2 className="text-3xl font-bold mb-8 italic">The Ecosystem</h2>
+          <div className="flex flex-col gap-6 text-lg text-text leading-relaxed">
+            <p>
+              Zosterix stands as our flagship initiative—a testament to our commitment to the global research community. As a dedicated space for researchers to document findings and foster collaboration, it embodies our mission to enhance the impact of academic work.
+            </p>
+            <p>
+              Through a growing portfolio of specialized platforms, we are cultivating a diverse digital infrastructure that respects the nuances of every field we enter.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <footer className="about-footer">
-        <div className="about-footer-text">
-          PHAENICIO-SYSTEMS-001
-        </div>
-        <div className="about-footer-text">
-          - 2026 -
-        </div>
+      <footer className="mt-24 pt-12 border-t border-border flex justify-between items-center text-[10px] font-mono tracking-[0.3em] text-text/50 uppercase">
+        <div>PHAENICIO-SYSTEMS-001</div>
+        <div>- EST. 2026 -</div>
       </footer>
     </div>
   );

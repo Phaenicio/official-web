@@ -15,7 +15,7 @@ function App() {
     <Router>
       <ParticleBackground />
       <Navbar />
-      <main style={{ minHeight: 'calc(100vh - 80px)' }}>
+      <main className="min-h-[calc(100vh-90px)]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
