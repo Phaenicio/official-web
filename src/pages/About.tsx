@@ -2,12 +2,12 @@ import { FiTarget, FiCpu, FiUsers } from 'react-icons/fi';
 
 const About = () => {
   return (
-    <div className="max-w-[1000px] mx-auto mt-32 px-[5%] fade-in pb-32">
-      <header className="mb-24 text-center pt-[90px]">
-        <div className="inline-block px-4 py-1.5 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-semibold mb-6">
+    <div className="max-w-[1000px] mx-auto px-[5%] fade-in pb-32 pt-[90px]">
+      <header className="mb-24 text-center">
+        <div className="badge">
           Pioneering Research Infrastructure
         </div>
-        <h1 className="text-6xl font-extrabold leading-[1.1] mb-6 text-text-h max-md:text-4xl tracking-tight">
+        <h1 className="text-6xl leading-[1.1] mb-6 max-md:text-4xl">
           Phaenicio: Building <br /> <span className="text-primary">for the Next Frontier.</span>
         </h1>
         <p className="text-xl text-text max-w-[600px] mx-auto">
@@ -50,10 +50,7 @@ const About = () => {
         </div>
       </section>
 
-      <footer className="mt-24 pt-12 border-t border-border flex justify-between items-center text-[10px] font-mono tracking-[0.3em] text-text/50 uppercase">
-        <div>PHAENICIO-SYSTEMS-001</div>
-        <div>- EST. 2026 -</div>
-      </footer>
+      {/* Global footer will be rendered by App.tsx */}
     </div>
   );
 };
