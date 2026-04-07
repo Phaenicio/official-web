@@ -21,12 +21,12 @@ const Contact = () => {
   ];
 
   return (
-    <div className="max-w-[1000px] mx-auto mt-32 px-[5%] fade-in pt-[90px] pb-32">
+    <div className="max-w-7xl mx-auto mt-32 px-[5%] fade-in pt-[90px] pb-32">
       <header className="mb-24 text-center">
-        <div className="inline-block px-4 py-1.5 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-semibold mb-6">
+        <div className="badge">
           Direct Line to the Founders
         </div>
-        <h1 className="text-6xl font-extrabold leading-[1.1] mb-6 text-text-h tracking-tight max-md:text-4xl">
+        <h1 className="text-6xl leading-[1.1] mb-6 max-md:text-4xl">
           Get in <span className="text-primary">Touch.</span>
         </h1>
         <p className="text-xl text-text max-w-[600px] mx-auto">
@@ -34,7 +34,7 @@ const Contact = () => {
         </p>
       </header>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-20 text-left items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-20 text-left items-start">
         <section className="flex flex-col gap-12">
           <div className="mb-8">
             <h2 className="text-2xl font-bold mb-2">Co-Founders</h2>
@@ -47,7 +47,6 @@ const Contact = () => {
                   <img
                     src={founder.image}
                     alt={founder.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
                 </div>
                 <div>

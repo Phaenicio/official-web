@@ -69,10 +69,10 @@ const ParticleBackground = () => {
           this.y = Math.random() * h;
         } else {
           const edge = Math.floor(Math.random() * 4);
-          if (edge === 0) { this.x = -5;     this.y = Math.random() * h; }
+          if (edge === 0) { this.x = -5; this.y = Math.random() * h; }
           else if (edge === 1) { this.x = w + 5; this.y = Math.random() * h; }
           else if (edge === 2) { this.x = Math.random() * w; this.y = -5; }
-          else               { this.x = Math.random() * w; this.y = h + 5; }
+          else { this.x = Math.random() * w; this.y = h + 5; }
         }
 
         const angle = Math.random() * Math.PI * 2;

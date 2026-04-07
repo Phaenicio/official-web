@@ -6,15 +6,15 @@ import documentationImg from '../assets/Online document-bro.svg'; // Using for K
 
 const Home = () => {
   return (
-    <div className="flex flex-col fade-in pt-[90px]">
+    <div className="flex flex-col fade-in pt-[80px]">
       {/* Hero Section - Organization Focused */}
-      <section className="py-24 px-[5%] max-md:py-16 border-b border-border">
+      <section className="pt-12 pb-24 px-[5%] max-md:pt-8 max-md:pb-16 border-b border-border">
         <div className="max-w-7xl mx-auto grid grid-cols-2 gap-20 items-center max-md:grid-cols-1 max-md:gap-12">
           <div className="text-left">
-            <div className="inline-block px-4 py-1.5 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-semibold mb-6">
+            <div className="badge">
               Advancing Global Research Infrastructure
             </div>
-            <h1 className="text-6xl font-bold text-text-h leading-[1.1] mb-8 max-md:text-4xl tracking-tight">
+            <h1 className="text-6xl leading-[1.1] mb-1 max-md:text-4xl">
               Engineering the <br /> <span className="text-primary">Future of Knowledge.</span>
             </h1>
             <p className="text-xl text-text leading-relaxed mb-10 max-w-xl">
@@ -30,7 +30,7 @@ const Home = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <img src={logo} alt="Phaenicio Logo" className="w-full max-w-[400px] opacity-10 animate-pulse" />
+            <img src={logo} alt="Phaenicio Logo" className="w-full max-w-[400px]" />
           </div>
         </div>
       </section>
@@ -69,7 +69,7 @@ const Home = () => {
                 </ul>
               </div>
               <div className="w-1/3 max-md:w-full opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-                 <img src={documentationImg} alt="Networking" />
+                <img src={documentationImg} alt="Networking" />
               </div>
             </div>
 
@@ -116,7 +116,7 @@ const Home = () => {
             <p className="text-xl text-text mb-12">
               Everything you need to get started with the Phaenicio ecosystem and Zosterix.
             </p>
-            
+
             <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
               <Link to="/user-guide" className="glass p-8 rounded-3xl hover:border-primary group">
                 <h4 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">User Guide</h4>

@@ -48,7 +48,7 @@ const Navbar = () => {
           GitHub
         </a>
 
-        <a href="#" className="flex items-center bg-primary text-white no-underline text-sm font-semibold rounded-lg overflow-hidden transition-all duration-200 border border-white/10 h-[42px] cursor-pointer hover:bg-primary-hover hover:-translate-y-0.5 hover:shadow-[0_8px_16px_rgba(230,57,70,0.25)] max-md:h-[54px] max-md:text-lg max-md:w-4/5 max-md:justify-center max-md:rounded-xl" onClick={closeMenu}>
+        <a href="#" className="flex items-center bg-primary text-white no-underline text-sm font-semibold rounded-lg overflow-hidden transition-all duration-200 border border-white/10 h-[42px] cursor-pointer hover:bg-primary-hover hover:-translate-y-0.5 hover:shadow-[0_8px_16px_rgba(30,58,138,0.25)] max-md:h-[54px] max-md:text-lg max-md:w-4/5 max-md:justify-center max-md:rounded-xl" onClick={closeMenu}>
           <span className="px-4 flex items-center h-full">Try Zosterix</span>
           <span className="w-px h-5 bg-white/15"></span>
           <span className="px-2.5 flex items-center justify-center h-full text-lg">

@@ -30,8 +30,8 @@ const UserGuide = () => {
       <main className="text-left w-full max-w-4xl">
         <header className="relative glass p-16 max-md:p-8 rounded-[40px] grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-8 items-center mb-24 overflow-hidden">
           <div className="relative z-10">
-            <div className="inline-block px-4 py-1.5 bg-primary text-white rounded-full text-xs font-bold mb-6 shadow-lg shadow-primary/20 uppercase tracking-widest">Phaenicio User Guide</div>
-            <h1 className="text-5xl font-extrabold leading-tight mb-6 text-text-h tracking-tight max-md:text-4xl">Zosterix <br /> <span className="text-primary">Documentation.</span></h1>
+            <div className="badge">Phaenicio User Guide</div>
+            <h1 className="text-5xl leading-tight mb-6 max-md:text-4xl">Zosterix <br /> <span className="text-primary">Documentation.</span></h1>
             <p className="text-xl text-text/80 max-w-md leading-relaxed font-medium">
               Everything you need to master the global research networking ecosystem.
             </p>
@@ -87,7 +87,7 @@ const UserGuide = () => {
           <p className="text-lg text-text leading-relaxed mb-10 italic">
             Communicate your findings effectively through the integrated blogging and discussion platform.
           </p>
-          <div className="glass p-10 rounded-[32px] mb-8 hover:-translate-y-1 group shadow-[0_20px_50px_rgba(230,57,70,0.05)] border-primary/10">
+          <div className="glass p-10 rounded-[32px] mb-8 hover:-translate-y-1 group shadow-[0_20px_50px_rgba(30, 58, 138, 0.05)] border-primary/10">
              <span className="inline-block px-4 py-1.5 bg-primary text-white rounded-xl text-sm font-bold mb-6 shadow-lg shadow-primary/20 transition-transform group-hover:scale-110">5</span>
             <h3 className="text-2xl font-bold mb-4 text-text-h">Academic Blogs</h3>
             <p className="text-text leading-relaxed">Publish long-form research updates, methodologies, or meta-analyses that are searchable within the entire ecosystem.</p>
